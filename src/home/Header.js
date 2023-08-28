@@ -63,7 +63,7 @@ export default function Header(){
             </div>}
             <div className="img-container">
                 <Slider {...settings}>
-                    {data.map((item) => (
+                    {data?.map((item) => (
                     <img src={item.image_url} key={item.id}/>
                     ))}
                 </Slider>
