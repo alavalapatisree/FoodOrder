@@ -36,7 +36,7 @@ export default function Main(){
             </div>
             <hr/>
             <div className="cards-holder">
-                {restaurantData.map((items)=> <Cards info={items} key={items.id}/>)}
+                {restaurantData?.map((items)=> <Cards info={items} key={items.id}/>)}
             </div>
             <div className="page">
                 {offset>1 && <button onClick={changePage} name='prev-page'>{"<"}</button>}
